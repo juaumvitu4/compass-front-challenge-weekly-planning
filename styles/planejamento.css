@@ -1,0 +1,135 @@
+* {
+    margin: 10px;
+    padding: 0;
+}
+
+body {
+    font-family:'Poppins';
+}
+
+.cabecalho {    
+    height: 131px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+    align-items: center;
+    
+    
+}
+
+.menu {
+    display: flex;
+    height: 70%;
+    background-color: #6688FF;
+    align-items: baseline;
+    flex-direction: column;
+    width: 588px;
+    padding: 7px 20px;
+    left: 8px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.titulo__cabecalho {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: normal;
+    align-items: center;
+    font-size: 22px;   
+
+}
+
+.texto__cabecalho {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+
+.btn__salvar {
+    display: flex;
+    width: 33%;
+    padding-left: 10px;
+}
+
+.btn__cor-verde, .btn__cor-vermelho {
+    border: none;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.06rem;
+    cursor: pointer;
+}
+
+.btn__cor-verde {
+    background-color: #2CBE82;
+    margin-right: 30px;
+}
+
+.btn__cor-vermelho {
+    background-color: #DA2B40;
+}
+
+.hora {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #3B3E45;
+}
+
+.data {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #3B3E45;
+}
+
+.atividade {
+    width: 340px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px #2CBE82 solid;
+}
+
+.selecionar__dia {
+    height: 40px;
+    text-align: start;;
+    width: 340px;
+    border-radius: 10px;
+    border: 1px #2CBE82 solid;
+}
+
+.adicionar__hora {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid #2CBE82;
+}
+
+.adicionar__atividade {
+    height: 40px;
+    width: 240px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #2CBE82;
+}
+
+.excluir__atividade {
+    height: 40px;
+    width: 240px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #DA2B40;
+}
+

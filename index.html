@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/planejamento.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Planejamento semanal</title>
+  </head>
+  <body>
+    <header class="cabecalho d-flex justify-content-between">
+        <section class="menu">
+            <h1 class="titulo__cabecalho">Planejamento Semanal</h1>
+            <p class="texto__cabecalho">Utilize o formulário para adicionar novas tarefas:</p>
+        </section>
+
+      <section class="btn__salvar">
+        <button class="btn__cor-verde">Salvar localStorage</button>
+        <button class="btn__cor-vermelho">Excluir localStorage</button>
+      </section>
+
+      <section class="data-hora">
+        <p class="hora"></p>
+        <p class="data"></p>
+      </section>
+    </header>
+
+    <main>
+        <section class="dias__semana d-flex justify-content-around d-flex align-items-center">
+            <input type="text" placeholder="Atividade" required class="atividade">
+            <select name="semana" id="semana" class="selecionar__dia">
+                <option value="adicionar__semana">Segunda-Feira</option>
+                <option value="adicionar__semana">Terça-Feira</option>
+                <option value="adicionar__semana">Quarta-Feira</option>
+                <option value="adicionar__semana">Quinta-Feira</option>
+                <option value="adicionar__semana">Sexta-Feira</option>
+                <option value="adicionar__semana">Sabado</option>
+                <option value="adicionar__semana">Domingo</option>
+            </select>    
+            <input type="time" value="12:00"name="adicionar__hora" id="adicionar-hora" class="adicionar__hora">
+            <button class="adicionar__atividade">+ Adicionar Atividade</button>
+            <button class="excluir__atividade">- Excluir Todos</button>
+    </section>
+       
+    </main>    
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
