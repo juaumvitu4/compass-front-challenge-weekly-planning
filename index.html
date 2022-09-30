@@ -12,6 +12,10 @@
     <title>Planejamento semanal</title>
   </head>
   <body>
+    <script src="/script/service.js"></script>
+    <script src="/script/atividade.js"></script>
+    <script type="module" src="/script/relogio.js"></script>
+    <script type="module" src="/script/semana.js"></script>
     <header class="cabecalho d-flex justify-content-between">
         <section class="menu">
             <h1 class="titulo__cabecalho">Planejamento Semanal</h1>
@@ -33,20 +37,50 @@
         <section class="dias__semana d-flex justify-content-around d-flex align-items-center">
             <input type="text" placeholder="Atividade" required class="atividade">
             <select name="semana" id="semana" class="selecionar__dia">
-                <option value="adicionar__semana">Segunda-Feira</option>
-                <option value="adicionar__semana">Terça-Feira</option>
-                <option value="adicionar__semana">Quarta-Feira</option>
-                <option value="adicionar__semana">Quinta-Feira</option>
-                <option value="adicionar__semana">Sexta-Feira</option>
-                <option value="adicionar__semana">Sabado</option>
-                <option value="adicionar__semana">Domingo</option>
+                <option value="segunda">Segunda-Feira</option>
+                <option value="terca">Terça-Feira</option>
+                <option value="quarta">Quarta-Feira</option>
+                <option value="quinta">Quinta-Feira</option>
+                <option value="sexta">Sexta-Feira</option>
+                <option value="sabado">Sabado</option>
+                <option value="domingo">Domingo</option>
             </select>    
             <input type="time" value="12:00"name="adicionar__hora" id="adicionar-hora" class="adicionar__hora">
-            <button class="adicionar__atividade">+ Adicionar Atividade</button>
+            <button onclick= "adicionarAtividade()" class="adicionar__atividade" >+ Adicionar Atividade</button>
             <button class="excluir__atividade">- Excluir Todos</button>
     </section>
-       
-    </main>    
-    <script type="module" src="/script.js"></script>
+        <section class="semana d-flex align-items-center">
+            <div class="horario d-flex align-items-center justify-content-center">
+                <h4 class="horario__texto">Horário</h2>
+            </div>
+            <nav class="planejamento__semanal">
+                <ul class="lista d-flex justify-content-between align-items-center">
+                    <li class="d-flex justify-content-center align-items-center lista__semana segunda">Segunda-Feira                        
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana terca">Terça-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana quarta">Quarta-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana quinta">Quinta-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana sexta">Sexta-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana sabado">Sabado-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana domingo">Domingo-Feira</li>                    
+                </ul>
+            </nav>
+        </section>
+        <section class="secao__atividades">
+            <div class="card w-40">
+                <div class="card-body afazeres">                  
+                  <p class="card-text"></p>                  
+                </div>
+              </div>
+              
+              <div class="card w-50">
+                <div class="afazeres">                  
+                  <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>                  
+                </div>
+              </div>
+        </section>
+    </main>
+    
+    
   </body>
 </html>

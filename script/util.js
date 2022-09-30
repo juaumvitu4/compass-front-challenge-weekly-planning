@@ -23,5 +23,7 @@ export const getDate = () => {
     parentTag.innerHTML = "";
     childTag.appendChild(content);
     parentTag.appendChild(childTag);
+    
   };
+  
   
