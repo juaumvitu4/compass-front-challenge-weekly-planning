@@ -1,47 +1,97 @@
-const lista = service.find()
-// start() 
+var dia = "";
 
-function adicionarAtividade() {
-    const atividade = document.querySelector('.atividade').value;
-    const adicionarHora = document.querySelector('.adicionar__hora').value;
-    const selecionarDia = document.querySelector('.selecionar__dia').value;
-    const novaAtividade = { id: uuidv4(), atividade, adicionarHora, selecionarDia }
-    saveAndRefresh(novaAtividade)
+let diaSemana = [{  
+  dia: 'segunda',
+  atividades: []
+}, {   
+    dia: 'terca',
+    atividades: []
+  }, {
+    dia: 'quarta',
+    atividades: []
+  }, {
+    dia: 'quinta',
+    atividades: []
+  },{
+    dia: 'sexta',
+    atividades: []
+  }, {
+    dia: 'sabado',
+    atividades: []
+  }, {
+    dia: 'domingo',
+    atividades: []
 
-    console.log(novaAtividade)
+  }]
+
+function buscarDia(dia) {
+  return diaSemana.find(x => x.dia === dia);
+
 }
 
-function start() {
-	const items = lista?.map(htmlValue).join("\n");
-	document.getElementById(".secao__atividades").innerHTML = items;
-}
+function agendamento() {
+    document.getElementById('agendamento').innerText = '';
+    var diasemana1 = document.getElementById('semana').value;
 
-function updateItens(novaAtividade) {
-	document.getElementById(".secao__atividades").innerHTML += htmlValue(novaAtividade);
-}
+      
+    let dia = buscarDia(diasemana1)
+       
+      let objeto = {
+        hora: document.getElementById('adicionar-hora').value,
+        descricao: document.getElementById('atividade_add').value
+      }      
+      dia.atividades.push(objeto);
+      
+      document.getElementById('adicionar-hora').value = "" ;
+      document.getElementById('atividade_add').value = "" ;        
+      
 
-
-function htmlValue(novaAtividade) {
-	return `
-        <div class="card w-40">
-            <div class="card-body afazeres">                  
-                <p class="card-text">${novaAtividade.atividade}</p>                  
-            </div>
-        </div>
-	`
-}
-
-
-function saveAndRefresh(novaAtividade) {
-	lista.push(novaAtividade)
-	service.save()
-	updateItens(novaAtividade)
-}
-
-
-function uuidv4() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-      return v.toString(16);
-    });
+    
   }
+
+function eventos() {
+    let saida = buscarDia(dia);
+    let html = saida.atividades.map(s => `
+    <div class="d-flex direction-row efeitos">
+      <div>
+        <p class="hora__plano text-center d-flex align-items-center justify-content-center">${s.hora}</p>
+       </div>
+       <p class="listra"></p>
+        <div>
+        <p class="plano d-flex align-items-center">${s.descricao}</p>
+        </div>
+        <button type="button" class="btn__apagar d-flex align-items-center justify-content-center" onclick="apagar_hora('${s.hora}', '${s.descricao}')">Apagar</button>
+    </div>`).join("\n")
+    
+    document.getElementById('agendamento').innerHTML = html;
+    
+}
+
+
+function segunda() {
+    dia = 'segunda'
+}
+
+function terca() {
+  dia = 'terca'
+}
+
+function quarta() {
+  dia = 'quarta'
+}
+
+function quinta() {
+  dia = 'quinta'
+}
+
+function sexta() {
+  dia = 'sexta'
+}
+
+function sabado() {
+  dia = 'sabado'
+}
+
+function domingo() {
+  dia = 'domingo'
+}

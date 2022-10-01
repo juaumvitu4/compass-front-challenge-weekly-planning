@@ -1,0 +1,71 @@
+.plano {
+    width: 512px;
+    height: 85px;
+    position: relative;
+    right: 40px;    
+    padding-left: 20px ;
+    box-shadow: 0 2px 5.5px rgba(0, 0, 0, 0.02);
+    border: 1px solid #FFFFFF;
+    background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.42) 0%, rgba(255, 255, 255, 0.336) 110.84%);
+    border-radius: 15px;
+    backdrop-filter: blue(10.5px);
+    
+    
+} 
+
+.plano:hover {
+    transition: 0.5;
+    background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.76) 0%, rgba(255, 255, 255, 0.61) 110.84%);
+    
+    
+}
+
+.efeitos:hover {
+    transition: 0.5;   
+    
+}
+
+.listra{
+    background-color: #FFA246;
+    width: 14px;
+    height: 83px;
+    border-radius: 15px 0 0 15px;
+    margin-right: 10px;
+    position: relative;
+    position: relative;
+    left: 7px;
+    top: 11px;
+}
+
+.hora__plano {
+    width: 85px;
+    height: 85px;
+    background: #ffa34696;
+    border-bottom: 1px solid #dcdfe3;
+    border-radius: 10px;
+    position: relative;
+    right: 25px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #3B3E45;
+    text-align: center;
+}
+
+
+.btn__apagar {
+    color: #FFFFFF;
+    background-color: #DA2B40;
+    padding: 0.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 70px;
+    height: 20px;   
+    font-size: 14px;
+    font-style: normal;
+    border: none;
+    line-height: 20px;
+    position: relative;
+    right: 136px;
+    top: 15px;
+
+}
