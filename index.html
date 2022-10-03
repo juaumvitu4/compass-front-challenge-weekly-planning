@@ -27,8 +27,8 @@
         </section>
 
       <section class="btn__salvar d-flex">
-        <button class="btn__cor-verde" onclick="salvar()">Salvar localStorage</button>
-        <button class="btn__cor-vermelho" onclick="excluir()">Excluir localStorage</button>
+        <button class="btn__cor-verde" onclick="localSalvo()">Salvar localStorage</button>
+        <button class="btn__cor-vermelho" onclick="excluirLocal()">Excluir localStorage</button>
       </section>
 
       <section class="data-hora">
@@ -51,7 +51,7 @@
             </select>    
             <input type="time" value="12:00"name="adicionar__hora" id="adicionar-hora" class="adicionar__hora">
             <button onclick= "agendamento()" class="adicionar__atividade" >+ Adicionar Atividade</button>
-            <button class="excluir__atividade" onclick="excluir__todos">- Excluir Todos</button>
+            <button class="excluir__atividade" onclick="excluirTodos()">- Excluir Todos</button>
     </section>
         <section class="semana d-flex align-items-center">
             <div class="horario d-flex align-items-center justify-content-center">
@@ -59,7 +59,7 @@
             </div>
             <nav class="planejamento__semanal">
                 <ul class="lista d-flex justify-content-between align-items-center">
-                    <li class="d-flex justify-content-center align-items-center lista__semana segunda" onclick="segunda(), eventos()" >Segunda-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana segunda selecionado" onclick="segunda(), eventos()" >Segunda-Feira</li>
                     <li class="d-flex justify-content-center align-items-center lista__semana terca" onclick="terca(), eventos()">Terça-Feira</li>
                     <li class="d-flex justify-content-center align-items-center lista__semana quarta" onclick="quarta(), eventos()">Quarta-Feira</li>
                     <li class="d-flex justify-content-center align-items-center lista__semana quinta" onclick="quinta(), eventos()">Quinta-Feira</li>
@@ -70,8 +70,7 @@
             </nav>
         </section> 
         <section class="d-flex direction-column">
-          <div id="agendamento"></div>
-          <!-- <div id="plano"></div> -->
+          <div id="agendamento"></div>          
         </section>          
     </main>   
   </body>

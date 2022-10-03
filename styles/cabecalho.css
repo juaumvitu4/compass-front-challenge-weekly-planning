@@ -1,16 +1,17 @@
 * {
     margin: 10px;
-    padding: 0;
-    background-image: url(/assets/img/LogoCompasso.svg);
-    background-repeat: no-repeat;
-    background-position: right 50vh;
-	background-size: 30%;
+    padding: 0;   
+    
+    
 }
 
 body {
     font-family:'Poppins';    
     
+    
+    
 }
+
 
 .cabecalho {    
     height: 131px;

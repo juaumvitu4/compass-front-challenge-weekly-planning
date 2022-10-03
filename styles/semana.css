@@ -33,11 +33,11 @@
     cursor: pointer;
 }
 
-.segunda:active{
-    width: 250px;   
-    cursor: grabbing;
-    
+.selecionado {
+    width: 230px;   
+    cursor: grabbing; 
 }
+
 .terca {
     background-color: #2CBE82;
     cursor: pointer;
