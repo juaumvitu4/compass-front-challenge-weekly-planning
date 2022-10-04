@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles/planejamento.css" />
     <link rel="stylesheet" href="styles/cabecalho.css">
     <link rel="stylesheet" href="styles/semana.css">
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
-    <title>Planejamento semanal</title>
+    <title>Planejamento Semanal</title>
   </head>
   <body>
     <script src="/script/service.js"></script>
@@ -37,9 +38,9 @@
       </section>
     </header>
 
-    <main>
+    <main class="afazeres">
         <section class="dias__semana d-flex justify-content-around d-flex align-items-center">
-            <input type="text" placeholder="Atividade" required class="atividade text-center" id="atividade_add">
+            <input type="text" placeholder="Atividade" class="atividade text-center" id="atividade_add" autofocus>
             <select name="semana" id="semana" class="selecionar__dia">
                 <option value="segunda">Segunda-Feira</option>
                 <option value="terca">Terça-Feira</option>
@@ -49,7 +50,7 @@
                 <option value="sabado">Sabado</option>
                 <option value="domingo">Domingo</option>
             </select>    
-            <input type="time" value="12:00"name="adicionar__hora" id="adicionar-hora" class="adicionar__hora">
+            <input type="time" value="12:00" name="adicionar__hora" id="adicionar-hora" class="adicionar__hora">
             <button onclick= "agendamento()" class="adicionar__atividade" >+ Adicionar Atividade</button>
             <button class="excluir__atividade" onclick="excluirTodos()">- Excluir Todos</button>
     </section>
@@ -59,7 +60,7 @@
             </div>
             <nav class="planejamento__semanal">
                 <ul class="lista d-flex justify-content-between align-items-center">
-                    <li class="d-flex justify-content-center align-items-center lista__semana segunda selecionado" onclick="segunda(), eventos()" >Segunda-Feira</li>
+                    <li class="d-flex justify-content-center align-items-center lista__semana segunda" onclick="segunda(), eventos()" >Segunda-Feira</li>
                     <li class="d-flex justify-content-center align-items-center lista__semana terca" onclick="terca(), eventos()">Terça-Feira</li>
                     <li class="d-flex justify-content-center align-items-center lista__semana quarta" onclick="quarta(), eventos()">Quarta-Feira</li>
                     <li class="d-flex justify-content-center align-items-center lista__semana quinta" onclick="quinta(), eventos()">Quinta-Feira</li>
@@ -70,7 +71,7 @@
             </nav>
         </section> 
         <section class="d-flex direction-column">
-          <div id="agendamento"></div>          
+          <div id="agendamento"></div>                  
         </section>          
     </main>   
   </body>

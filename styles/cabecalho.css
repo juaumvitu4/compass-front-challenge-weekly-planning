@@ -7,11 +7,28 @@
 
 body {
     font-family:'Poppins';    
-    
-    
-    
+    background-image: url(/assets/img/LogoCompasso.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vh;
+	background-size: 30%;  
+    overflow: scroll;    
+}
+   
+
+body::-webkit-scrollbar {
+    width: 8px;
 }
 
+body::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF;
+    border: 20px;
+    border: 3px solid #FFFFFF;
+    width: 8px;
+}
 
 .cabecalho {    
     height: 131px;
@@ -76,8 +93,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 20px;
-    
+    line-height: 20px;    
     color: #3B3E45;
 }
 

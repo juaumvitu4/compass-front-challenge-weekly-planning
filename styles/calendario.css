@@ -1,3 +1,6 @@
+
+
+
 .plano {
     width: 512px;
     height: 85px;
@@ -8,31 +11,28 @@
     border: 1px solid #FFFFFF;
     background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.42) 0%, rgba(255, 255, 255, 0.336) 110.84%);
     border-radius: 15px;
-    backdrop-filter: blue(10.5px);
-    
+    backdrop-filter: blue(10.5px); 
+      
     
 } 
 
 .plano:hover {
     transition: 0.5;
-    background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.76) 0%, rgba(255, 255, 255, 0.61) 110.84%);
-    
+    background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.76) 0%, rgba(255, 255, 255, 0.61) 110.84%);   
     
 }
 
 .efeitos:hover {
-    transition: 0.5;   
-    
+    transition: 0.5;       
 }
 
 .listra{
-    background-color: #FFA246;
+    background-color: #6688FF;
     width: 14px;
     height: 83px;
     border-radius: 15px 0 0 15px;
-    margin-right: 10px;
-    position: relative;
-    position: relative;
+    margin-right: 13px;
+    position: relative;    
     left: 7px;
     top: 11px;
 }
@@ -40,7 +40,7 @@
 .hora__plano {
     width: 85px;
     height: 85px;
-    background: #ffa34696;
+    background: rgba(102, 136, 255, 0.4);
     border-bottom: 1px solid #dcdfe3;
     border-radius: 10px;
     position: relative;

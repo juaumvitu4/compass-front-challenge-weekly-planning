@@ -23,8 +23,7 @@
     line-height: 20px;
     border-radius: 9px 9px 0 0;
     font-family: 'Poppins';
-    margin-top: 10px;
-    
+    margin-top: 10px;   
 
 }
 
@@ -33,9 +32,9 @@
     cursor: pointer;
 }
 
-.selecionado {
-    width: 230px;   
-    cursor: grabbing; 
+.segunda:active{
+     
+    cursor: grabbing;    
 }
 
 .terca {
@@ -44,7 +43,7 @@
 }
 
 .terca:active {
-    width: 250px;
+    
     cursor: grabbing;
 }
 
@@ -54,7 +53,7 @@
 }
 
 .quarta:active {
-    width: 250px;
+    
     cursor: grabbing;
 }
 
@@ -64,8 +63,8 @@
 }
 
 .quinta:active {
-    width: 250px;
-    cursor: grabbing;
+    
+    cursor: grabbing;    
 }
 
 .sexta {
@@ -74,7 +73,7 @@
 }
 
 .sexta:active {
-    width: 250px;
+    
     cursor: grabbing;
 }
 
@@ -84,7 +83,7 @@
 }
 
 .sabado:active {
-    width: 250px;
+    
     cursor: grabbing;
 }
 
@@ -93,22 +92,7 @@
     cursor: pointer;
 }
 
-.domingo:active {
-    width: 250px;
+.domingo:active {    
     cursor: grabbing;
 }
 
-.cartao {
-    width: 40%;
-}
-
-.afazeres {
-    width: 512px;
-    height: 85px;
-    left: 119px;    
-    top: 315px;
-    background: linear-gradient(112.83deg, rgba(228, 240, 248, 0.42) 0%, rgba(255, 255, 255, 0.336) 110.84%);
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 2px 5.5px rgba(0, 0, 0, 0.02);
-    border: 15px;
-}
